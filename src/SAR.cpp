@@ -306,6 +306,10 @@ CON_COMMAND(sar_exit, "sar_exit - removes all function hooks, registered command
 	sar.Unload();
 }
 
+CON_COMMAND(sar_hi, "sar_hi - hello :3\n") {
+	console->Print("Hello!\n");
+}
+
 #pragma region Unused callbacks
 void SAR::Pause() {
 }
